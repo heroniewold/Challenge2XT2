@@ -1,0 +1,175 @@
+/* body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} */
+
+body {
+    height: auto;
+}
+#container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#clock {
+    color: white;
+    margin-top: 100px;
+}
+#date {
+    color: white;
+    
+}
+footer {
+    text-align: center;
+    width:100%;
+    position: absolute;
+    bottom:0;
+}
+#spacex {
+    width: 200px;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+#rooster {
+    display: none;
+    width: 100px;
+	position: absolute;
+	top: 300px;
+	right: 400px;
+	animation: 2000ms slide infinite alternate ease-in-out;
+}
+
+@keyframes slide {
+  0% { 
+  	right: -150px; 
+  }
+  100% { 
+  	right: 100px;
+  }
+}
+#sheep {
+    display: none;
+    width: 100px;
+	position: absolute;
+	top: 400px;
+	right: 400px;
+	animation: 2000ms pulsate infinite alternate ease-in-out;
+}
+
+@keyframes pulsate {
+    0% { 
+        right: -100px; 
+        
+    }
+    50% {
+        right: 100;
+        top: 350px;
+    }
+    100% { 
+  	     right: 220px;
+    }
+}
+
+/* media queries for tablet, laptop, desktop */
+@media screen and (min-width: 768px) {
+    @keyframes slide {
+  0% { 
+  	right: 200px; 
+  }
+  100% { 
+  	right: -150px;
+  }
+}
+    #rooster {
+        animation: 3000ms slide infinite alternate ease-in-out;
+    }
+    
+    #sheep {
+	   animation: 4000ms pulsate infinite alternate ease-in-out;
+    }
+    @keyframes pulsate {
+    0% { 
+        right: -100px; 
+        
+    }
+    50% {
+        right: 400;
+        top: 350px;
+    }
+    100% { 
+  	     right: 820px;
+    }
+}
+}
+
+@media screen and (min-width: 1024px) {
+    @keyframes slide {
+  0% { 
+  	right: 350px; 
+  }
+  100% { 
+  	right: -150px;
+  }
+}
+    #rooster {
+        animation: 4000ms slide infinite alternate ease-in-out;
+    }
+    #sheep {
+	   animation: 5000ms pulsate infinite alternate ease-in-out;
+    }
+    @keyframes pulsate {
+        0% { 
+            right: -100px; 
+        }
+        50% {
+            right: 525px;
+            top: 350px;
+        }
+        100% { 
+  	         right: 1050px;
+        }
+    }
+}
+@media screen and (min-width: 1440px) {
+    @keyframes slide {
+  0% { 
+  	right: 400px; 
+  }
+  100% { 
+  	right: -150px;
+  }
+}
+    #rooster {
+        animation: 5000ms slide infinite alternate ease-in-out;
+    }
+    #sheep {
+	   animation: 5000ms pulsate infinite alternate ease-in-out;
+    }
+    @keyframes pulsate {
+        0% { 
+            right: -100px; 
+        }
+        50% {
+            right: 540px;
+            top: 350px;
+        }
+        100% { 
+  	         right: 1480px;
+        }
+    }
+}
